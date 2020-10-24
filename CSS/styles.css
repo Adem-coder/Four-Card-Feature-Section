@@ -3,6 +3,7 @@ html{
     font-size: 15px;
     width: 1440px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body{
     font-family: 'Poppins', sans-serif;
@@ -16,11 +17,11 @@ header{
     text-align: center;
     padding-top: 50px;
 }
-header .big-heading{
+.big-heading{
     font-size: 2rem;
     font-weight: 600;
 }
-header .small-heading{
+ .small-heading{
     font-size: 2rem;
     font-weight: 200;
 }
@@ -91,45 +92,46 @@ border-top: 5px solid hsl(180, 62%, 55%);
 .blue{
     border-top: 5px solid hsl(212, 86%, 64%);
 }
+footer p{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
 /* Media query */
 
 @media screen and (max-width: 375px){
-
-   body{
-        background-color: white;
-       
+    html,
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        
     }
-  /* Header  */
-  header .big-heading{
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    
-}
-header .small-heading{
-    font-size: 1.6rem;
-    
-}
+ 
+    header{
+        margin: 60px 10px;
+        text-align: center;
+    }
+    .big-heading,
+    .small-heading{
+        font-size: 1.6rem;
+        
+    }
+    header p{
+        width: 90%;
+      
+        
+    }
+        .container{
+       
+        flex-direction: column;
+        
+    }
+    .box{
+        width: 90%;
+        height: auto;
+    }
+        
 
-.heading-para{
-    width: 57%;
-    margin: auto;
-    text-align: center; 
-
-    
- }
-.container{
-  
-    flex-direction: column;
-    
-   
-}
-.box{
-    width: 304px;
-}
-.cyan{
-    margin-top: 70px;
-}
-   
 } 
 
 
